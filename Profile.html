@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="favicon.ico">
+        <title>Portfolio Website</title>
+        <style>
+            body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    background-color: #ffefa0;
+    font-size: 18px;
+    width: 100%;
+    min-height: 50px;
+    position: fixed;
+    z-index: 3;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #f6830f;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+}
+
+div.top-container {
+    background-color: #ffefa0;
+    position: relative;
+    padding-top: 60px;
+}
+
+h1 {
+    margin: 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem; 
+    color: #ff9642;
+    /* 16px = 1em = 1rem = 100% */
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #ff9642;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2rem;
+    color: #ff9642;
+}
+
+h3 {
+    color: #f6830f;
+}
+
+hr {
+    border-style: none;
+    width: 10%;
+    border-top: 5px dotted gray;
+}
+
+.profile-pic {
+    border-radius: 25%;
+}
+
+#about {
+    width: 30%;
+    line-height: 2;
+    margin: auto;
+    padding: 50px;
+}
+
+.hi {
+    font-size: 25px;
+}
+
+p .pro {
+    text-decoration: underline;
+}
+
+.cloud-bottom-left {
+    width: 10%;
+    position: absolute;
+    bottom: 400px;
+    left: 130px;
+}
+
+.tree-left {
+    width: 15%;
+}
+
+.house {
+    width: 30%;
+}
+
+.cloud-bottom-right {
+    width: 10%;
+    position: absolute;
+    bottom: 400px;
+    right: 120px;
+}
+
+.tree-right {
+    width: 15%;
+}
+
+#interests {
+    padding: 50px 0;
+}
+
+.interest-row {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #ffefa0;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: #f6830f 2px 2--px 2px 2px, 2px 2px 2px 2px;
+}
+
+.interest-description-programming {
+    text-align: left;
+}
+
+.interest-description-web {
+    text-align: right;
+}
+
+.interest-description-read {
+    text-align: left;
+}
+
+#interests .interest-row p {
+    line-height: 2;
+}
+
+#interests .interest-row img {
+    width: 25%;
+} 
+
+.programming {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.webdev {
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.read {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#contact {
+    padding: 50px 0;
+    width: 30%;
+    margin: auto;
+    line-height: 2;
+}
+
+.btn {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ff9642;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.bottom-container {
+    background-color: #ffefa0;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.credit {
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.footer-link {
+    color: #f6830f;
+    text-decoration: none;
+    margin: auto 20px;
+}
+
+.footer-link:hover {
+    color: #000;
+}
+
+@media(max-width:560px) {
+    h1 {
+        font-size: 3rem;        
+    }
+    
+    div.top-container {
+        padding-top: 100px;        
+    }
+    
+    .subtitle {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .sun {
+        position: relative;
+        left: 136px;
+        top: 10px;
+    }
+
+    .cloud-bottom-left {
+        position: relative;
+        top: -110px;
+        left: 10px;
+    }
+
+    .cloud-bottom-right {
+        position: relative;
+        top: -160px;
+        left: 60px;
+    }
+
+    #about {
+        width: 65%;
+    }
+
+    .interest-row {
+        width: 75%;
+    }
+
+    #contact {
+        width: 65%;
+    }
+
+    header {
+        border-bottom:2px solid #f6830f;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+}
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="navlink"><a href="#Home">Home</a></li>
+                    <li class="navlink"><a href="#about">About</a></li>
+                    <li class="navlink"><a href="#interests">Skills</a></li>
+                    <li class="navlink"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="top-container">
+            <h1>I am Sagar Yadav</h1>
+            <p class="subtitle">A Programmer</p>
+            <img class="tree-left" src="https://github.com/MusfiqDehan/Portfolio-v4/blob/master/images/tree.png?raw=true" alt="tree-img">
+            <img class="house" src="https://github.com/MusfiqDehan/Portfolio-v4/blob/master/images/house.png?raw=true" alt="house-img">
+            <img class="tree-right" src="https://github.com/MusfiqDehan/Portfolio-v4/blob/master/images/tree.png?raw=true" alt="tree-img">
+        </div>
+        
+        <div class="middle-container">
+            <section id="about">
+                <h2>About Me</h1>
+                <img style="height:200px" class="profile-pic" alt="Sagar-profile-picture" src="Photo.jpg">
+                <p>
+                    <strong class="hi">Hi!👋</strong><br>
+                    I am an IT Graduate from SGGSIE&T,Nanded. I am an Aspiring Software Engineer and an active Open Source Contributor. In my free time, I love to spend time with my family, and love to click nature photographs.
+                </p>
+            </section>
+            
+            <hr>
+
+            <section id="interests">
+                <h2>My Skills</h2>
+
+                <div class="interest-row">
+                    <img class="programming" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4YenKa-knBRtaZU-66ibcQxGPJgm9DqolIHwFegR5pqKUB3_J" alt="programming-icon">
+                    <h3 class="interest-description-programming">Programming</h3>
+                    <p class="interest-description-programming">
+                        I have a good knowledge of programming languages<br>
+                        such as java,C programming language ,C++ programming language.
+                    </p>
+                </div>
+
+                <div class="interest-row">
+                    <img class="webdev" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-thU1NVGVTFKvHEgPwgNhaKXYlWnHYaFDi8V2bcMg15vXAETS" alt="web-development-icon">
+                    <h3 class="interest-description-web">Web Development</h3>
+                    <p class="interest-description-web">
+                        I have a good knowlede of web develoment languages<br>
+                        such as HTML,CSS,Javascript,Bootstrap,PHP<br>Python.
+                    </p>
+                </div>
+
+                <div class="interest-row">
+                    <img class="read" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiRT5n0pBvTf0DhZmKCUmQbPEop_chYixkeDjJhtJhVYAkUzHC" alt="reading-icon">
+                    <h3 class="interest-description-read">My Projects</h3>
+                    <p class="interest-description-read">
+                        I have builded 3 projects during my college period<br>
+                        my first project was college sports event website in HTML,CSS.<br>
+                        My 2nd project is Hotel Management System bulded in PHP,MySQL.<br style="padding-left: 20px;">
+                        My 3rd Project is ATM management system in Java and MYSQL.
+
+                    </p>
+                </div>                
+           </section>
+           
+            <hr>
+
+            <section id="contact">
+                <h2>Get In Touch</h2>
+                <p>
+                    If you need any help in Programming and Web Development related
+                    thing, please feel free to contact me!<br>
+                    Email-ID - ysagar558@gmail.com
+                
+                </p>
+                <input class="btn" type="button" value="Contact Me">
+            </section>
+        </div>
+
+        <div class="bottom-container">
+            <img style="height:30px" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="footer-link"  href="http://" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <img style="height:30px" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="footer-link"  href="http://" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <img style="height:30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzzDjMBjEbwfQnmPvFKrNx5WpuPtCEP-R-MAAoNUGJA&s" class="footer-link"  href="http://" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+    </body>
+</html>

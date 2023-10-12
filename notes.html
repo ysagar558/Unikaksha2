@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(225, 225, 225);
+        }
+
+        #main {
+            display: block;
+            width: 100%;
+            margin: auto;
+        }
+
+        .card {
+            display: inline-block;
+            width: 24%;
+            max-height: 400px;
+            margin: 10px;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        .title {
+            display: block;
+            margin: auto;
+            width: 90%;
+            margin-top: 10px;
+            padding: 5px;
+            border: 0px solid transparent;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .content {
+            display: block;
+            margin: auto;
+            width: 80%;
+            height: 200px;
+            padding: 20px;
+            border: 0px solid transparent;
+            text-align: justify;
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        .date {
+            float: left;
+            margin: auto;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .date-ip {
+            display: block;
+            font-family: 'Exo 2', sans-serif;
+            font-size: 14px;
+            border: 0px solid transparent;
+            color: rgb(71, 73, 73);
+        }
+
+        .btn-cluster {
+            float: right;
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 10px;
+            border: 0px solid transparent;
+            border-radius: 10px;
+            background-color: transparent;
+            color: rgb(105, 49, 238);
+        }
+
+        .action-btn:hover {
+            background-color: rgb(105, 49, 238);
+            color: white;
+            cursor: pointer;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        #add-btn {
+            display: inline-block;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: transparent;
+            color: white;
+            background-color: blueviolet;
+        }
+
+        #add-btn:hover {
+            background-color: rgb(255, 255, 255);
+            color: blueviolet;
+            border: 2px solid blueviolet;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="card">
+            <input type="text" class="title" value="Title of a note" disabled>
+            <textarea class="content" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis facere, deserunt
+                fugit labore repudiandae doloribus quisquam quaerat exercitationem repellat beatae debitis nemo velit,
+                qui, ipsa soluta illum consequatur minima?</textarea>
+            <span class="date"><input class="date-ip" type="date" value="2023-09-28"></span>
+            <span class="btn-cluster">
+                <button class="action-btn edit" onclick="edit(0)"><span style="font-size: 20px;"
+                        class="material-symbols-outlined">edit</span></button>
+                <button class="action-btn" onclick="del(0)"><span style="font-size: 20px;"
+                        class="material-symbols-outlined">delete</span></button>
+            </span>
+        </div>
+
+    </div>
+    <button id="add-btn" onclick="add()">+</button>
+</body>
+<script>
+
+    let status = ["display"];
+    function edit(item) {
+        console.log(status[item])
+        if (status[item] == "display") {
+            document.getElementsByClassName("title")[item].removeAttribute("disabled");
+            document.getElementsByClassName("content")[item].removeAttribute("disabled");
+            document.getElementsByClassName("edit")[item].innerHTML = '<span style="font-size: 20px;"  class="material-symbols-outlined">save</span>';
+            status[item] = "edit";
+        }
+        else if (status[item] == "edit") {
+            document.getElementsByClassName("title")[item].setAttribute("disabled", "disabled");
+            document.getElementsByClassName("content")[item].setAttribute("disabled", "disabled");
+            document.getElementsByClassName("edit")[item].innerHTML = '<span style="font-size: 20px;" class="material-symbols-outlined">edit</span>';
+            status[item] = "display";
+        }
+    }
+    function del(item) {
+        document.getElementsByClassName("card")[item].remove();
+    }
+    function add() {
+        let n = document.querySelectorAll(".card").length;
+        console.log(n);
+        status[n]="display";
+        let dat = new Date();
+        var y = dat.toLocaleString("default", { year: "numeric" });
+        var m = dat.toLocaleString("default", { month: "2-digit" });
+        var d = dat.toLocaleString("default", { day: "2-digit" });
+        let date = y + "-" + m + "-" + d;
+        console.log(date);
+        let c1 = "<div class='card'><input type='text' class='title' value='Title of a note' disabled><textarea class='content'disabled>Add our content here...</textarea><span class='date'><input class='date-ip' type='date' value='" + date + "'></span><span class='btn-cluster'><button class='action-btn edit' onclick='edit("+n+")'><span style='font-size: 20px;'class='material-symbols-outlined'>edit</span></button><button class='action-btn' onclick='del("+n+")'><span style='font-size: 20px;'class='material-symbols-outlined'>delete</span></button></span></div>";
+        document.getElementById("main").innerHTML += (c1);
+    }
+</script>
+
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hospital</title>
+<style>
+    #header{
+        width:100%
+    }
+    .title{
+        font-size: 30px;
+        color:plum;
+    }
+    .menui{
+        font-size: 20px;
+    }
+    .menub{
+        border: 2px solid black;
+        text-align: center;
+        padding:5px;
+        border-radius: 10px;
+    }
+    #main{
+        background-image: url('https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 500px;
+    }
+    .p1{
+        border: 0.5px aquamarine;
+        width: 100%;
+        margin-left: 6px;
+        /* margin-right:600px; */
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+        background-color: aquamarine;
+        color:black;
+        width: 30%;
+        height: 20px;
+        border-radius: 10px;
+    }
+    .p2{
+        width: 400px;
+margin-left: 50px;
+font-size: 40px;
+line-height: 1.5;
+    }
+    .p3{
+        width: 400px;
+        margin-left: 50px;
+
+    }
+    
+    .book{
+        border: 0.5px aquamarine ;
+        margin-left: 50px;
+        margin-top: 20px;
+        padding: 10px;
+        width: 200px;
+        margin-left: 50px;
+        background-color: aquamarine;
+        text-align: center;
+        border-radius: 10px;
+        color:black;
+        display: block;
+        text-decoration: none;
+
+
+        
+    }
+    .p4{
+        width:100%;
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.6;
+
+    }
+    #t2{
+        width:100%;
+        font-size:30px ;
+        text-align: center;
+        
+    }
+    .t3{
+        font-size: 35px;
+        color:blue;
+        border-right: 1px solid black;
+
+    }
+    .t4{
+        font-size: 25px;
+        border-right: 1px solid black;
+    }
+    .t5{
+        text-align: center;
+        border-radius: 12px;
+        background-color: aquamarine;
+        color:blue;
+        margin-left: 500px;
+        margin-right: 500px;
+        height:40px;
+        font-size:25px ;
+        padding-top: 15px;
+    }
+    .middle{
+        text-align: center;
+        width: 100%;
+        line-height: 1.5;
+    }
+    #t6{
+        width: 100%;
+        /* margin-left: 20px; */
+    }
+    .show{
+        text-align: center;
+        border-radius: 12px;
+        background-color: aquamarine;
+        color:blue;
+        margin-left: 500px;
+        margin-right: 500px;
+        height: 40px;
+        padding-top: 15px;
+
+    }
+    .help{
+        text-align: center;
+        border-radius: 20px;
+        background-color: aquamarine;
+        color: blue;
+        margin-top: 60px;
+        margin-left: 400px;
+        margin-right: 400px;
+        height: 40px;
+        padding-top:15px ;
+    }
+    .para{
+        text-align: center;
+        width: 100%;
+    }
+    .para2{
+        width: 50%;
+        
+        /* text-align: right; */
+        
+        transform: translateY(-1000%);
+        /* margin-left: 400px; */
+        margin-left: 600px;
+        margin-right: -600px;
+        margin-top: 460px;
+        text-align: justify;
+        border-radius: 12px;
+         background-color: rgb(180, 158, 187);
+         /* border-top: 70px; */
+          padding-top: 15px;
+          line-height: 1.5;
+          padding-bottom: 15px;
+        
+
+    }
+    .para3{
+        width: 50%;
+        
+        transform: translateY(-1850%);
+        margin-left: 600px;
+        background-color: blanchedalmond;
+        border-radius: 12px;
+        margin-top: 950px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 1.5;
+        padding-bottom: 15px;
+    }
+    .para4{
+        width: 50%;
+        
+        transform: translateY(-2500%);
+        margin-left: 600px;
+        background-color: blanchedalmond;
+        border-radius: 12px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 1.5;
+        margin-top: 1350px;
+    }
+    .trust{
+        text-align: center;
+        background-color: rgb(139, 192, 192);
+        color: blue;
+        transform: translateY(-12000%);
+        margin-bottom: 300px;
+        margin-left: 500px;
+        margin-right: 500px;
+        border-radius: 15px;
+        height: 25px;
+        font-size: 20px;
+        
+    }
+    .para5{
+        width: 100%;
+        text-align: center;
+        transform: translateY(-4800%);
+        font-size: 30px;
+    }
+    #t9{
+        text-align: center;
+        transform: translateY(-1000%);
+    }
+    .t10{
+        text-align: center;
+        transform: translateY(-14500%);
+    }
+    .back{
+        background-image: url("Glady.PNG");
+        background-position: right;
+        background-color: bisque;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 500px;
+        transform: translateY(-630%);
+
+
+    }
+    .para7{
+        
+        font-size: 30px;
+        width: 50%;
+        transform: translateY(-5%);
+        padding-top: 100px;
+        padding-left: 50px;
+        
+    }
+    .Gladdy{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+    .showm{
+        padding-left:50px;
+        margin-top: 50px;
+        background-color: rgb(208, 192, 223);
+        border-radius: 12px;
+        margin-right: 1100px;
+    }
+    .freq{
+        text-align: center;
+        transform: translateY(-8400%);
+    }
+    #t11{
+        width: 100%;
+        transform: translateY(-2000%);
+        font-size: 30px;
+        
+    }
+    .t12{
+
+        background-color: antiquewhite;
+        border-radius: 15px;
+    }
+    #t13{
+        width: 100%;
+        transform: translateY(-2050%);
+        font-size:20px ;
+        background-color: rgb(124, 106, 106);
+        color: white;
+        border-radius: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .smaller{
+        font-size:20px ;
+    }
+</style>
+</head>
+<body>
+<table id="header">
+    <tr>
+        <td class="title">SAGAR</td>
+        <td class="menui">Home</td>
+        <td class="menui">About</td>
+        <td class="menui">Book Session</td>
+        <td class="menui">Doctors</td>
+        <td class="menub"><a href="">Contact US</a></td>
+        <td class="menub" style="background-color: rgb(24, 23, 23);"><a href="">Sign Up</a></td>
+    </tr>
+</table>
+<div id="main">
+    <p class="p1">Welcome to our Hospital</p>
+    <h1 class="p2">Assisting your Mental Health with our best Services</h1>
+    <p class="p3">We were experienced in psychology consultation for couple of decades with your services we belive we can achive better for your mental health</p>
+    <a href=""class="book">Book consultation now</a>
+    </div>
+    <div>
+    
+                <p class="p4"><strong>Sheensy has expeerince in psychology <br>mental health prediction and healing a lot of people</strong><p>
+    </div>
+<div>
+    <table id="t2">
+        <tr>
+            <td class="t3">67000+ <span class="smaller">people</span> </td>
+            <td class="t3">27 <span class="smaller">years</span></td>
+            <td class="t3">8521<span class="smaller">hours</span></td>
+
+        </tr>
+        <tr>
+            <td class="t4">are healed</td>
+            <td class="t4">of experience</td>
+            <td class="t4">of working</td>
+        </tr>
+    
+
+    </table>
+
+</div>
+<div>
+    <h3 class="t5">Psychological issues</h3>
+</div>
+<div>
+    
+</div>
+<div>
+    <h1 class="middle">Psychological issues that<br> we deal with</h1>
+</div>
+<div>
+    <table id="t6">
+        <tr>
+            <td><img src="anxiety.PNG"></td>
+            <td><img src="Depression.PNG"></td>
+            <td><img src="Angry.PNG"></td>
+        </tr>
+        <tr>
+            <td><img src="Lost.PNG"></td>
+            <td><img src="Needs.PNG"></td>
+            <td><img src="Personal.PNG"></td>
+
+        </tr>
+    </table>
+    <h3 class="show">Show more</h3>
+</div>
+<div>
+    <h3 class="help">We are here to help you</h3>
+</div>
+<div>
+    <h1 class="para">We have the best psychologist services in the country<br>with high and international standard</h1>
+</div>
+<div>
+    <img src="Harry.PNG">
+    <p class="para2"><u style="text-underline-offset: 10px;">Online 1 on 1 consultation</u><br>The best online therapy & consulting experiencefrom the verified<br>professionals.Top Therapists for your mental health</p>
+
+
+
+</div>
+<div>
+    <p class="para3"><u style="text-underline-offset: 10px">Supervision</u><br>Supervision is act of or instance of directing ,managing or oversight.<br>We can help you to get on track</p>
+</div>
+<div>
+    <p class="para4"><u style="text-underline-offset: 10px">Psychoeducation</u><br>Psychopeducation can include:information given verbally in therapy <br>session,written material in the form of psychology tools information <br>handouts.</p>
+</div>
+    <h3 class="trust">They are already trust us </h3>
+<div>
+    <p class="para5">Trusted by personal ,comapny and <br>educational institution</p>
+</div>
+<div>
+    <table id="t9">
+        <tr>
+            <td><img src="Allianz.PNG"></td>
+            <td><img src="Binus.PNG"></td>
+            <td><img src="BSI.PNG"></td>
+            <td><img src="DBS.PNG"></td>
+
+        </tr>
+        <tr>
+            <td><img src="Dinda.PNG"></td>
+            <td><img src="fresh.PNG"></td>
+            <td><img src="Jobstreet.PNG"></td>
+            <td><img src="Oxfam.PNG"></td>
+
+        </tr>
+        <tr>
+            <td><img src="Roomah.PNG"></td>
+            <td><img src="Save the children.PNG"></td>
+            <td><img src="skimigs.PNG"></td>
+            <td><img src="tree.PNG"></td>
+
+        </tr>
+        
+    </table>
+        <h3 class="t10">and many other ++</h3>
+</div>
+<div class="back">
+    <p class="para7"><q>They managed to get me to share all the <br>problems i was experienced.They also listened <br>discussed the problems i was expriencimg in <br>great detail without being patronizing or judging</q></p>
+    <p class="Gladdy">Gladys Howard <br style="font-size: 5px;">Young Entreprenoaur</p>
+    <h3 class="showm">Show more</h3>
+    
+
+</div>
+<div>
+    <h1 class="freq">Frequently Asked Questions</h1>
+
+</div>
+<div>
+    <table id="t11">
+        <tr>
+            <td class="t12">What is shisy? </td>
+            <td class="t12">+</td>
+            <td class="t12">Where I can find shinsy office?</td>
+            <td class="t12">+</td>
+        </tr>
+        <tr>
+            <td class="t12">How shinsy handle psychological consultation?</td>
+            <td class="t12">+</td>
+            <td class="t12">How can we get best psychologis?</td>
+            <td class="t12">+</td>
+        </tr>
+        <tr>
+            <td class="t12">is shinsy psychological clinic?</td>
+            <td class="t12">+</td>
+            <td class="t12">How does online consultation works?</td>
+            <td class="t12">+</td>
+
+        </tr>
+        <tr>
+            <td class="t12">How to talk pychologist online?</td>
+            <td class="t12">+</td>
+            <td class="t12">What condition that we need tnerapy?</td>
+            <td class="t12">+</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <table id="t13">
+        <tr>
+            <td><img src="shinsyi.PNG"height='20'>Shinsy</td>
+            <td>Patients</td>
+            <td>Company</td>
+            <td>Business</td>
+            <td>Legal</td>
+        </tr>
+        <tr>
+            <td><img src="location.PNG"height='20'>8052 preston rd inglweood</td>
+            <td>How it works</td>
+            <td>Contact US</td>
+            <td>Executive Team</td>
+            <td>Health Plans</td>
+        </tr>
+        <tr>
+            <td><img src="Phone.PNG"height='20'>(675)555 - 010</td>
+            <td>What is cost</td>
+            <td>Blog</td>
+            <td>Employers</td>
+            <td>Cookies</td>
+        </tr>
+        <tr>
+            <td><img src="Email.PNG"height='20'>shinsy@gmail.com</td>
+            <td>Our Providers</td>
+            <td>Careers</td>
+            <td>Government</td>
+            <td>Disclaimer</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
